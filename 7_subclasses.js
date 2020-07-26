@@ -11,6 +11,7 @@ class Book {
 
 class Magazine extends Book {
     constructor(title,author,year,month){
-        super
+        super(title,author,year)
+        this.month = month;
     }
 }
