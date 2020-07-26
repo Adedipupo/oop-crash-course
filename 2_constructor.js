@@ -4,4 +4,5 @@ function Book(title, author, year){
     this.year = year;
 }
 
-const book1 = new Book();
+const book1 = new Book('Book One', 'John Doe', '2016');
+const book2 = new Book('Book two', 'Jane Doe', '2017');
