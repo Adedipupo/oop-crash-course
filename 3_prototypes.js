@@ -8,6 +8,8 @@ function Book(title, author, year) {
     }
 }
 
+Book.prototype.getSummary = 
+
 const book1 = new Book('Book One', 'John Doe', '2016');
 const book2 = new Book('Book two', 'Jane Doe', '2017');
 
