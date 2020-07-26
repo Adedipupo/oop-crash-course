@@ -13,3 +13,5 @@ const book1 = Object.create(bookProtos, {
     author : {value : 'John Doe'},
     year : {value : '2018'}
 });
+
+console.log(book1);
