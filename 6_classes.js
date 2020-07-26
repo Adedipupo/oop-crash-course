@@ -18,4 +18,6 @@ class Book {
 }
 
 const book1 = new Book('Book One', 'John Doe', '2016');
-console.log(book1);
+console.log(book1)
+book1.revise('2030')
+console.log(book1)
