@@ -14,4 +14,5 @@ function Magazine(title,author,year,month){
 }
 Magazine.prototype = Object.create(Book.prototype);
 const mag1 = new Magazine('Book One', 'John Doe','2016', 'May');
-console.log(mag1.getSummary())
+Magazine.prototype.constructor = Magazine;
+console.log(mag1)
