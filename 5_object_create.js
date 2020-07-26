@@ -7,3 +7,9 @@ const bookProtos = {
         return `${this.title} is ${years} years old`;
     }
 }
+
+const book1 = Object.create(bookProtos, {
+    title : {value : 'Book One'},
+    author : {value : 'John Doe'},
+    year : {value : '2018'}
+});
