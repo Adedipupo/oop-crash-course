@@ -11,4 +11,4 @@ Book.prototype.getSummary = function () {
 const book1 = new Book('Book One', 'John Doe', '2016');
 const book2 = new Book('Book two', 'Jane Doe', '2017');
 
-console.log(book2.getSummary());
+console.log(book1.getSummary());
