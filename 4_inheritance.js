@@ -8,5 +8,10 @@ Book.prototype.getSummary = function () {
 }
 
 function Magazine(title,author,year,month){
-    Book.call(this,title,author,year)
+    Book.call(this,title,author,year);
+
+    this.month = month; 
 }
+Magazine.prototype = Object.create(Book.prototype);
+const mag1 = new Magazine('Book One', 'John Doe','2016', 'May');
+console.log(mag1.getSummary())
