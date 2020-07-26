@@ -17,4 +17,4 @@ class Magazine extends Book {
 }
   
 const book1 =new Magazine('Book One', 'John Doe', '2019','April');
-console.log(book1)
+console.log(book1.getSummary())
