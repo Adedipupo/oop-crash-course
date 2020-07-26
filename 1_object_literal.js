@@ -3,9 +3,9 @@ const book1 = {
   author: "John Doe",
   year: "2018",
 
-  getSummary: function(){
-    return `${this.title} was written by ${this.author} in ${year}`
-  }
+  getSummary: function () {
+    return `${this.title} was written by ${this.author} in ${this.year}`;
+  },
 };
 
 console.log(book1.getSummary());
