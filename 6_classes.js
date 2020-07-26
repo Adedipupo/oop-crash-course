@@ -4,6 +4,17 @@ class Book {
     this.author = author,
     this.year = year
  }
+    Book.prototype.getSummary = function () {
+        return `${this.title} was written by ${this.author} in ${this.year}`;
+    }
+    Book.prototype.getAge = function () {
+        const years = new Date().getFullYear() - this.year;
+        return `${this.title} is ${years} years old`;
+    }
+    Book.prototype.revise = function (newYear) {
+        this.year = newYear;
+        this.revised = true;
+    }
 }
 
 const book1 = new Book('Book One', 'John Doe', '2016');
