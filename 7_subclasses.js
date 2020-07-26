@@ -15,4 +15,6 @@ class Magazine extends Book {
         this.month = month;
     }
 }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+  
+const book1 =new Magazine('Book One', 'John Doe', '2019','April');
+console.log(book1)
