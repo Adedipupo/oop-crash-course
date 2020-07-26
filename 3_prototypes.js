@@ -9,7 +9,11 @@ Book.prototype.getSummary = function () {
 }
 Book.prototype.getAge = function () {
     const years = new Date().getFullYear() - this.year;
-    return `${this.title} is ${years} old`;
+    return `${this.title} is ${years} years old`;
+}
+Book.prototype.revise = function(newYear){
+    this.year = newYear;
+    this.revised = true;
 }
 
 const book1 = new Book('Book One', 'John Doe', '2016');
